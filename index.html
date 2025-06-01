@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Ricky's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <canvas id="canvas"></canvas>
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Alexander Ricky</span>
+            </div>
+
+            <div class="links">
+                <div class="link"><a href="#">Home</a></div>
+                <div class="link"><a href="#projects">Projects</a></div>
+                <div class="link"><a href="#skills">Skills</a></div>
+                <div class="link"><a href="#education">Experience</a></div>
+                <div class="link"><a href="#contact">Contact</a></div>
+            </div>
+
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>            
+        </div>
+
+        <div class="dropdown">
+            <div class="links">
+                <a href = "#">Home</a>
+                <a href = "#projects">Projects</a>
+                <a href = "#skills">Skills</a>
+                <a href = "#education">Experience</a>   
+                <a href = "#contact">Contact</a>
+                <i class ="fa-solid fa-xmark close" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class ="image">
+                <image src="profile_picture.jpg" alt="Main Image">
+            </div>
+
+            <div class="content">
+                <h1 data-aos="fade-left">
+                    Hi! I'm <span>Alexander Ricky</span>
+                </h1>
+                <div class="typewriter">
+                    <h3 class="typewriter-text">I'm a <span id="typewriter"></span></h3>
+                </div>
+
+                <p>A Computer Science major at Binus University, specializing in the Game Development track.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Alerica" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexander-ricky-budianto-62247b294/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alershw/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="btn">
+                    <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">More About Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Projects -->
+    <section class="projects" id="projects">
+        <div class="content">
+            <div class="title"><span>My Projects</span></div>
+            <div class="boxes">
+                <div class="box">
+                    <div class ="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">Brain Joint</div>
+                    <div class="tech-colection">
+                        <div class="tech-tags">Unity</div>
+                        <div class="tech-tags">C#</div>
+                    </div>
+                    <p>A fast-paced puzzle game made in just 48 hours for a game jam. <span>Ranked #6/38 Overall</span> by public vote. Focused on experimental mechanics, logic puzzles, and tight feedback loops.</p>
+                </div>
+                <div class="box">
+                    <div class ="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">Doodle Kitchen</div>
+                    <div class="tech-colection">
+                        <div class="tech-tags">Unity</div>
+                        <div class="tech-tags">C#</div>
+                    </div>
+                    <p> My first ever game jam project, a chaotic cooking simulator with hand-drawn visuals.  <span>Ranked #28/44 Overall</span> by public vote. While unpolished, it taught me valuable lessons about game flow, time-based challenges, and rapid prototyping.</p>
+                </div>
+                <div class="box">
+                    <div class ="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">Bullet Reign</div>
+                    <div class="tech-colection">
+                        <div class="tech-tags">React</div>
+                    </div>
+                    <p>Bullet Reign is a fast-paced top-down shooter with roguelike elements, where every battle is a fight for survival in a chaotic hell. <span>Built as a personal project to explore and understand Scriptable Objects</span> in Unity.</p>
+                </div>
+                <div class="box">
+                    <div class ="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">Dewi Anom Website</div>
+                    <div class="tech-colection">
+                        <div class="tech-tags">Laravel</div>
+                    </div>
+                    <p>A community website built for the village of Wringianom during a volunteer program. <span>Collaborated with a team of 10+ over 2 months.</span> I worked on the backend using the <span>Laravel framework</span> to support admin panels and content systems.</p>
+                </div>
+
+                <div class="box">
+                    <div class ="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">Fision</div>
+                    <div class="tech-colection">
+                        <div class="tech-tags">Android Studio</div>
+                        <div class="tech-tags">Kotlin</div>
+                        <div class="tech-tags">Python</div>
+                        <div class="tech-tags">YOLOv8</div>
+                    </div>
+                    <p> An AI-powered food scanner built in a team of 3. Detects ingredients from a photo and suggests possible recipes. My focus was on <span>integrating machine learning inference into the mobile app</span>.</p>
+                </div>
+
+                <div class="box">
+                    <div class ="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">Tamer Tales</div>
+                    <div class="tech-colection">
+                        <div class="tech-tags">C</div>
+                    </div>
+                    <p> A group project that reimagines classic Pokémon style gameplay <span>made entirely in pure C.</span> Focused on tile-based movement, combat system, and low level memory handling. Built in a team of 3, highlighting deep logic planning and teamwork under constraints.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class ="skills" id="skills">
+        <div class="content">
+            <div class="title"><span>My Skills</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic">
+                        My Skills
+                    </div>
+                    <p data-aos="fade-right">
+                        I started learning code in 2020, back in high school. Since then, I've explored a variety of paths, from web development, AI and machine learning to game design. I enjoy building things that are interactive, meaningful, or just plain fun.
+                    </p>
+                    <div class="experience">
+                        <div class = "num">5</div>
+                        <div class = "exp">
+                            Years Of <br>
+                            Learning
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic">Tools</div>
+                        <div class="per">Unity | VS Code | Android Studio | Git & GitHub</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">Framework</div>
+                        <div class="per">React | Laravel</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">Programing Language </div>
+                        <div class="per">C# | C | Python | Kotlin | Java</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">Other</div>
+                        <div class="per">Blender | Aseprite</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="content">
+            <div class="title"><span>My Experience</span></div>
+
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Binus University | Till now</h3>
+                        <p> Computer Science major at Binus University, specializing in the Game Development track.</p>
+                        <p> GPA: 3.99 / 4.00</p>   
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Teaching Assistant | 1 Year</h3>
+                        <p>Taught and assisted 8 classes, over 160+ students total across Java, Python, and C. Covered OOP, algorithms, automation, and AI use in business</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Java Programming Lecturer | 1 Year</h3>
+                        <p> LnT Class / Bootcamp, training for 30+ students</p>
+                        <p>Covering Java Basics to Intermediate OOP, JavaFX, JDBC/ODBC integration, Generics, Exception Handling, and Multithreading</p>                 
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Freshmen Leader & Partner | 1 Year 3 Months</h3>
+                        <p> Mentored 16 assigned students and supported multiple groups in adaptation, academic guidance, and mental health support.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3>Treasurer and Secretary of BNCC | 1 Year</h3>
+                        <p> Oversaw finances, documentation, and planning for workshops and events in a leading campus tech organization. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"> <span>More About Me</span></div>
+            <div class="about-details">
+                <div class = "left">
+                    <img src="studying.png" alt="About Image">
+                </div>
+                <div class = "right">
+                    <div class = "topic">Creativity is My Passion</div>
+                    <p>I'm a detail-oriented developer with a passion for building tools, systems, and stories. I'm naturally curious and enjoy breaking down complex ideas into simpler parts whether in code, design, or teaching others.</p>
+                    <p>My long-term dream is to work in a space where creativity and technology intersect building games, apps, or tools that leave lasting impact. I'm deeply interested in game mechanics, simulation, and educational technology.</p>   
+                    <p>Outside of coding, I enjoy exploring music, visual storytelling, and thoughtful design. I believe progress comes from iteration, community, and constantly challenging yourself to go further than yesterday.</p> 
+                    <div class="btn">
+                        <button onclick="window.open('https://github.com/Alerica', '_blank')">More About Me</button>
+                    </div>
+                </div>                   
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Contact Me</span></div>
+            <div class="text">
+                <div class="topic">Let`s connect</div>
+                <p>
+                    Whether you're interested in my work, potential collaborations, or feedback opportunities, feel free to reach out.
+                </p>
+                <div class="btn">
+                    <button>Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+    <div class="text">
+        <span>Created By
+            <a href="#">Ricky</a> &#169; 2025 All Rights Reserved.
+        </span>
+    </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html></section>
