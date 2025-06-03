@@ -505,6 +505,52 @@ section .button button:hover {
     margin: auto;
 }
 
+.contact h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: white;
+    background: black;
+    border-radius: 2rem;
+    border: 2px solid #0065F8;
+    margin: 1.6rem 0;
+    resize: none;
+    box-shadow: #0065F8 0px 0px 10px;
+}
+
+.contact form .btn {
+    width: 30%px;
+    padding: 1.2rem;
+    border: 2px solid #0065F8;
+    border-radius: 1.5rem;
+    background: black;
+    color: white;
+    margin-top: -1rem;
+    box-shadow: #0065F8 0px 0px 10px;
+}
+
+.contact form .btn:hover {
+    background: #0065F8;
+    color: white;
+    cursor: pointer;
+    box-shadow: #0065F8 0px 0px 30px;
+}
+
 footer {
     background: #0065F8;
     padding: 15px 0;
@@ -649,7 +695,7 @@ footer .text span a:hover {
     }
     
     .main-container button {
-       margin-top: 15px; 
+       margin-top: 15px;
     }
 
     .skills-details .boxes .per {
