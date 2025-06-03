@@ -283,11 +283,27 @@
                 <div class="topic">Let`s connect</div>
                 <p>
                     Whether you're interested in my work, potential collaborations, or feedback opportunities, feel free to reach out.
-                </p>
-                <div class="btn">
-                    <button>Contact Me</button>
-                </div>
+                </p>                
             </div>
+
+            <form action="https://formspree.io/f/xrbkgjdr" method="POST">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" name="name"  placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" name="number" placeholder="Phone Number" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                </div>
+
+                <div class="input-group-2">
+                    <textarea name="message" id="" cols="30"
+                    rows="10" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </div>
+            </form>
         </div>
     </section>
 
